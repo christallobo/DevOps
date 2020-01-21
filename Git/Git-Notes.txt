@@ -1,0 +1,48 @@
+Github	- website to store repositories and share with users
+- centralised - any issue with repository loses all the code
+	- push: add to repository
+	- pull: taking update
+- distributed - local repository is created conisting of changes in the repository code
+      	- reduces dependency of code on repository
+	- push: push to local repository
+	- pull: pull from repository to local repository
+	- create a backup on local repository
+
+Git	- version control system 
+	- distributed version control system (GIT)
+	- used for source code management 
+
+--------------------------------------------------
+-> Make a folder aware of git
+	1) git init			- initialise local git repo
+	2) git clone (repository url) 	- create local copy from remote repository
+	3) git add filename or (*.*),(.)- add file(s) to git staging area present in local machine(remote repository)
+	4) git commit -m "message"	- add or commit files in staging area to the local repository - content of staging area is lost
+	5) git push			- push changes from local to remote repository
+	6) git status			- inform whether any file exists in project folder not added in local repository
+					- inform of any changes in the project folder
+
+	- to register email id and username-
+		- git config --global user.email "hassanipooja1234@gmail.com"
+		- git config --global user.name "PoojaHassani"
+
+	- create repository from cmd
+		- git remote add origin https://github.com/PoojaHassani/LTI_Git_Training.git
+		- git push -u origin master - push the changes to repository
+				    (branch)
+
+-------------------------------------------------
+-> Setup remote repository with eclipse
+	1) window -> show view -> git repositories
+	2) copy remote repository URL
+	3) clone a git repository - eclipse - add url
+	4) import content of local repository to eclipse
+	5) right click on working tree
+
+- gitignore - will ignore all files except for the one specified
+
+--------------------------------------------------
+-> push java project to repository
+- File -> Team -> share  -- to share the project to selected repository
+
+-> project right click - team - commit - drag required files to staged area

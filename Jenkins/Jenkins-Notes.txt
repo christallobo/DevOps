@@ -1,0 +1,67 @@
+-> Jenkins
+	- tool completely written in java
+	- used for CI(Continuous Integration) and CD(Continuous Development)
+	- download jenkins war file
+	- by default jenkins uses jetty server
+Steps to start jenkins: standalone
+	1) download jenkins war file
+	2) cmd at jenkins location
+	3) java -jar jenkins.war (execute a jar or war file)
+	4) will fail (jetty)
+	5) change port number of server by 
+		-> java -jar jenkins.war --httpPort=9090 (standalone deployment)
+	6) open localhost:9090
+	7) login using admininistrator password
+	8) install suggester plugins
+
+Start jenkins on tomcat server: (on any server)
+	1) apache.tomcat\bin
+	2) cmd
+	3) startup.bat
+	4) deploy jenkins.war file (copy paste in webapps folder in tomcat)
+	5) restart tomcat server
+	6) login to managerApp from localhost:9090
+	7) start jenkins after managerApp login (deploy on any server)
+
+Start Job
+	1) freestyle project - name
+	2)
+
+
+Build trigger - periodically - CRON expression
+Build 	- windows batch command- execute cmd commands
+	- Build after other projects are built
+	- post build action - what to do after this job is executed
+
+
+-----------------------
+-> Schedule Jenkins Job
+
+- create java class file
+- Create repository
+- create jenkins job (Job Build)
+- source code management - git - username/password
+- build triggers - poll scm - * * * * * (immediately i commit to the repository)
+- build - windows batch command	- javac D:/DevOps/Jenkins/TestJenkins/Hello.java
+			or	- d:
+				  cd /DevOps/Jenkins/TestJenkins
+				  javac Hello.java
+- create job test		- execute after job build is successful
+				- set job deploy as after excution 
+
+
+
+
+
+
+
+
+
+
+
+
+Jenkins
+- username: admin
+- password: admin
+- fullname: admin
+- email	  : anukoolsriv@gmail.com
